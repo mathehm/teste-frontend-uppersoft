@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <header class="l-header">
+        <img class="logo" src="./assets/img/logo-uppersoft.svg">
+    </header>
+    <main class="l-main">
+        <div class="l-main-containerCad">
+            <div class="l-main-container">
+                <form id="formCadastro" class="l-main-formCad" autocomplete="on">
+                    <div class="l-main-formTotal">
+                        <h1>Cadastrar</h1>
+                    </div>
+                    <div class="l-main-formBloco">
+                        <h2>Nome Completo</h2>
+                        <input id="nome" name="nome" type="text" placeholder="" required>
+                    </div>
+                    <div class="l-main-formBloco">
+                        <h2>E-mail</h2>
+                        <input id="email" name="email" type="email" placeholder="" required>
+                    </div>
+                    <div class="l-main-formBloco">
+                        <h2>Estado</h2>
+                        <select name="place">
+                            <option value="es">ES</option>
+                            <option value="mg">MG</option>
+                            <option value="rj">RJ</option>
+                            <option value="sp">SP</option>
+                        </select>
+                    </div>
+                    <div class="l-main-formBloco">
+                        <h2>Sexo</h2>
+
+                        <input class="radio" type="radio" id="sexo1" name="sexo" value="female">
+                        <label class="l-radio-text" for="sexo1">Feminino</label>
+
+                        <input class="radio" type="radio" id="sexo2" name="sexo" value="male">
+                        <label class="l-radio-text" for="sexo2">Masculino</label>
+
+                        <input class="radio" type="radio" id="sexo3" name="sexo" value="other">
+                        <label class="l-radio-text" for="sexo3">Outro</label>
+                    </div>
+                    <div class="l-main-formBloco">
+                        <h2>Senha</h2>
+                        <input id="senha" name="senha" type="password" placeholder="" required>
+                        <p class="l-subTitle">A senha deve ter pelo menos 6 caracteres</p>
+                    </div>
+                    <div class="l-main-formBloco">
+                        <h2>Confirmar Senha</h2>
+                        <input id="senhaConfirm" name="senhaConfirm" type="password" placeholder="" required>
+                    </div>
+                    <div class="l-main-formTotal">
+                        <input type="submit" value="CADASTRAR">
+                        <div class=l-main-sub>
+                            <p class="l-subTitle">Já possui conta?&nbsp;</p>
+                            <a class="l-subTitleLink" href="index.html">Entre aqui</a>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/cadastro.js"></script>
+</body>
+
+
+</html>

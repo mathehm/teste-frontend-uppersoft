@@ -1,0 +1,121 @@
+@use 'variables'
+
+.l-main
+    grid-area: main
+    height: 90vh
+    width: 100%
+    display: flex
+    flex-direction: column
+    justify-content: center
+    align-items: center
+
+.l-main-sub
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin-top: 5px
+
+.l-main-formLogin
+    width: 300px
+
+.l-main-container
+    background-color: variables.$color-white
+    padding: 20px
+    border-radius: 7px
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.l-main-containerCad
+    width: 90%
+
+.l-main-formCad
+    width: 550px
+    display: flex
+    flex-direction: row
+    justify-content: space-evenly
+    flex-wrap: wrap
+    text-align: center
+
+.l-main-formTotal
+    width: 60%
+
+.l-main-formBloco
+    width: 45%
+
+.l-main-containerUser
+    width: 100%
+    height: 80%
+
+.l-main-blocoUser
+    width: 100%
+    display: grid
+    grid-template: 1fr 1fr / 1fr 1fr 1fr
+    grid-gap: 25px
+
+.l-main-campoUser
+    background-color: white
+    border-radius: 10px
+    height: 25vh
+
+.h1User
+    font-size: 32px
+    display: inline-block
+
+.h2User
+    padding-top: 5px
+    padding-bottom: 5px
+    font-size: 20px
+
+.l-main-editUser
+    display: flex
+    justify-content: flex-end
+    align-items: center
+
+.l-main-infoUser
+    display: flex
+    justify-content: center
+    align-items: center
+    flex-direction: column
+
+.l-main-imgUser
+    border-radius: 100%
+    background-color: variables.$color-gray
+    box-sizing: border-box
+    width: 57px
+    height: 57px
+
+.l-main-indiceUser
+    display: flex
+    justify-content: end
+    align-items: center
+    margin-top: 15px
+    width: 100%
+
+.l-main-containerUserLod
+    position: absolute
+    width: 100%
+    height: 100%
+    display: flex
+    justify-content: center
+    align-items: center
+
+.l-main-userLod
+    animation: userLodRotate 1s infinite
+    border-radius: 50%
+    width: 50px
+    height: 50px
+    border: 6px solid variables.$color-white
+    border-top-color: variables.$color-primary
+
+@keyframes userLodRotate
+    0%
+        transform: rotate(360deg)
+
+#mainUser
+    display: none
+
+#imgAvatar
+    width: 60px
+    border-radius: 50%

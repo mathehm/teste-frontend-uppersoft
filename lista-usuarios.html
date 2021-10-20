@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Usuários</title>
+</head>
+
+<body class="l-bodyUser">
+    <div id="containerUserLod" class="l-main-containerUserLod">
+        <div class="l-main-userLod"></div>
+    </div>
+    <header class="l-header">
+        <img class="logo" src="./assets/img/logo-uppersoft.svg">
+    </header>
+    <main id="mainUser" class="l-main">
+        <div class="l-main-containerUser">
+            <h1 class="h1User">Administrar Usuários</h1>
+            <div id="userBloco" class="l-main-blocoUser">
+
+            </div>
+            <div class="l-main-indiceUser">
+                <h2 class="l-subTitle">mostrando <span id="users_per_page"></span> de <span id="users_total"></span>
+                </h2>
+            </div>
+        </div>
+    </main>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="./assets/js/app.js"></script>
+    <script src="./assets/js/listaUsuarios.js"></script>
+</body>
+
+</html>
