@@ -2,76 +2,75 @@
 <html lang="br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <title>Cadastro</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <title>Cadastro</title>
 </head>
 
 <body>
-    <header class="l-header">
-        <img class="logo" src="./assets/img/logo-uppersoft.svg">
-    </header>
-    <main class="l-main">
-        <div class="l-main-containerCad">
-            <div class="l-main-container">
-                <form id="formCadastro" class="l-main-formCad" autocomplete="on">
-                    <div class="l-main-formTotal">
-                        <h1>Cadastrar</h1>
-                    </div>
-                    <div class="l-main-formBloco">
-                        <h2>Nome Completo</h2>
-                        <input id="nome" name="nome" type="text" placeholder="" required>
-                    </div>
-                    <div class="l-main-formBloco">
-                        <h2>E-mail</h2>
-                        <input id="email" name="email" type="email" placeholder="" required>
-                    </div>
-                    <div class="l-main-formBloco">
-                        <h2>Estado</h2>
-                        <select name="place">
-                            <option value="es">ES</option>
-                            <option value="mg">MG</option>
-                            <option value="rj">RJ</option>
-                            <option value="sp">SP</option>
-                        </select>
-                    </div>
-                    <div class="l-main-formBloco">
-                        <h2>Sexo</h2>
-
-                        <input class="radio" type="radio" id="sexo1" name="sexo" value="female">
-                        <label class="l-radio-text" for="sexo1">Feminino</label>
-
-                        <input class="radio" type="radio" id="sexo2" name="sexo" value="male">
-                        <label class="l-radio-text" for="sexo2">Masculino</label>
-
-                        <input class="radio" type="radio" id="sexo3" name="sexo" value="other">
-                        <label class="l-radio-text" for="sexo3">Outro</label>
-                    </div>
-                    <div class="l-main-formBloco">
-                        <h2>Senha</h2>
-                        <input id="senha" name="senha" type="password" placeholder="" required>
-                        <p class="l-subTitle">A senha deve ter pelo menos 6 caracteres</p>
-                    </div>
-                    <div class="l-main-formBloco">
-                        <h2>Confirmar Senha</h2>
-                        <input id="senhaConfirm" name="senhaConfirm" type="password" placeholder="" required>
-                    </div>
-                    <div class="l-main-formTotal">
-                        <input type="submit" value="CADASTRAR">
-                        <div class=l-main-sub>
-                            <p class="l-subTitle">Já possui conta?&nbsp;</p>
-                            <a class="l-subTitleLink" href="index.html">Entre aqui</a>
-                        </div>
-                    </div>
-                </form>
-            </div>
+  <header class="l-header">
+    <img class="logo" src="./assets/img/logo-uppersoft.svg">
+  </header>
+  <main class="cadastro">
+    <div class="cadastro__cadastrar">
+      <h1>Cadastrar</h1>
+      <form id="formCadastro" class="cadastro__cadastrar__form" autocomplete="on">
+        <div class="cadastro__cadastrar__form__bloco">
+          <h2>Nome Completo</h2>
+          <input id="nome" name="nome" type="text" required>
         </div>
-    </main>
-    <script src="./assets/js/app.js"></script>
-    <script src="./assets/js/cadastro.js"></script>
-</body>
+        <div class="cadastro__cadastrar__form__bloco">
+          <h2>E-mail</h2>
+          <input id="email" name="email" type="email" required>
+        </div>
+        <div class="cadastro__cadastrar__form__bloco">
+          <h2>Estado</h2>
+          <select id="estado" name="estado" required>
+            <option value="es">ES</option>
+            <option value="mg">MG</option>
+            <option value="rj">RJ</option>
+            <option value="sp">SP</option>
+            <option value="pr">PR</option>
+            <option value="sc">SC</option>
+            <option value="rgs">RGS</option>
+            <option value="mt">MT</option>
+            <option value="go">GO</option>
+            <option value="mgs">MGS</option>
+          </select>
+        </div>
+        <div class="cadastro__cadastrar__form__bloco">
+          <h2>Sexo</h2>
+          <input class="cadastro__cadastrar__form__bloco--radio" type="radio" id="sexo1" name="sexo" value="female"
+            required>
+          <label class="cadastro__cadastrar__form__bloco--labelRadio" for="sexo1">Feminino</label>
 
+          <input class="cadastro__cadastrar__form__bloco--radio" type="radio" id="sexo2" name="sexo" value="male">
+          <label class="cadastro__cadastrar__form__bloco--labelRadio" for="sexo2">Masculino</label>
+
+          <input class="cadastro__cadastrar__form__bloco--radio" type="radio" id="sexo3" name="sexo" value="other">
+          <label class="cadastro__cadastrar__form__bloco--labelRadio" for="sexo3">Outro</label>
+        </div>
+        <div class="cadastro__cadastrar__form__bloco">
+          <h2>Senha</h2>
+          <input id="senha" name="senha" type="password" required>
+          <p class="cadastro__cadastrar__form__bloco--senha">A senha deve ter pelo menos 6 caracteres</p>
+        </div>
+        <div class="cadastro__cadastrar__form__bloco">
+          <h2>Confirmar Senha</h2>
+          <input id="senhaConfirm" name="senhaConfirm" type="password" required>
+        </div>
+        <input class="cadastro__cadastrar__form--button" type="submit" value="CADASTRAR">
+      </form>
+      <div class="cadastro__cadastrar__sub">
+        <p class="cadastro__cadastrar__sub--text">Já possui conta?&nbsp;</p>
+        <a class="cadastro__cadastrar__sub--link" href="index.html">Entre aqui</a>
+      </div>
+    </div>
+  </main>
+  <script src="./assets/js/app.js"></script>
+  <script src="./assets/js/cadastro.js"></script>
+</body>
 
 </html>

@@ -1,0 +1,99 @@
+@use 'home';
+@use 'cadastro';
+@use 'lista-usuarios';
+@use 'variables';
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box
+}
+
+body {
+  background-color: variables.$color-gray;
+
+  header {
+    background-color: variables.$color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+  }
+
+  @media screen and (max-width: 40rem) {
+    .cadastro {
+      overflow: auto;
+    }
+
+    .cadastro__cadastrar__form {
+      width: auto;
+    }
+
+    .usuarios {
+      overflow: auto;
+    }
+
+    .usuarios__admUsuarios {
+      padding: 1rem;
+      padding-top: 35rem;
+    }
+
+    .usuarios__admUsuarios__card {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+}
+
+input,
+select {
+  border-color: variables.$color-primary;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  margin-bottom: 5px;
+  margin-top: 5px;
+  padding: 10px;
+  width: 100%;
+}
+
+input[type="submit"] {
+  background-color: variables.$color-primary;
+  border-color: variables.$color-primary;
+  color: white;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+input[type="submit"]:hover {
+  background-color: variables.$color-white;
+  color: variables.$color-primary;
+  transition: .5s;
+}
+
+input:focus {
+  outline: none !important;
+  border-color: variables.$color-primary;
+  box-shadow: 0 0 2px variables.$color-primary;
+}
+
+select:focus {
+  outline: none !important;
+  border-color: variables.$color-primary;
+  box-shadow: 0 0 2px variables.$color-primary;
+}
+
+h1 {
+  color: variables.$color-primary;
+  font-size: 22px;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+h2 {
+  color: variables.$color-primary;
+  font-size: 14px;
+  font-weight: 600;
+  text-align: left;
+}

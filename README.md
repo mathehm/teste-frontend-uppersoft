@@ -23,7 +23,7 @@ Install dependencies
 Run Sass
 
 ```bash
-  sass --watch assets/sass/style.sass assets/css/style.css
+  sass --watch assets/scss/style.scss assets/css/style.css
 ```
 
 Open `index.html` on your browser

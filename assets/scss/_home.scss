@@ -1,0 +1,39 @@
+@use 'variables';
+
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 90vh;
+
+  &__acessar {
+    background-color: variables.$color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 5px;
+
+    &__form {
+      width: variables.$homeWidth;
+    }
+
+    &__sub {
+      display: flex;
+      margin-top: 0.5rem;
+
+      &--text {
+        color: variables.$color-dark;
+        font-size: 12px;
+      }
+
+      &--link {
+        color: variables.$color-primary;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+      }
+    }
+  }
+}
