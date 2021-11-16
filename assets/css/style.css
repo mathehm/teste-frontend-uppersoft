@@ -16,15 +16,27 @@
 .home__acessar__form {
   width: 20rem;
 }
+.home__acessar__form #eyePassword {
+  cursor: pointer;
+  width: 2rem;
+  fill: #174DBA;
+  margin: 0.313rem 0rem 0.313rem 0.313rem;
+  border-radius: 0.313rem;
+  padding: 0rem 0.5rem 0rem 0.5rem;
+  background-color: #174DBA;
+}
+.home__acessar__form__key {
+  display: flex;
+}
 .home__acessar__sub {
   display: flex;
   margin-top: 0.5rem;
 }
-.home__acessar__sub--text {
+.home__acessar__sub__text {
   color: #505050;
   font-size: 12px;
 }
-.home__acessar__sub--link {
+.home__acessar__sub__link {
   color: #174DBA;
   font-size: 12px;
   font-weight: bold;
@@ -57,31 +69,31 @@
   width: 18rem;
   text-align: center;
 }
-.cadastro__cadastrar__form__bloco--radio {
+.cadastro__cadastrar__form__bloco__radio {
   max-width: 1rem;
   margin-top: 1rem;
 }
-.cadastro__cadastrar__form__bloco--labelRadio {
+.cadastro__cadastrar__form__bloco__labelRadio {
   font-size: 12px;
   color: #174DBA;
   margin-right: 5px;
 }
-.cadastro__cadastrar__form__bloco--senha {
+.cadastro__cadastrar__form__bloco__senha {
   font-size: 12px;
   color: #505050;
 }
-.cadastro__cadastrar__form--button {
+.cadastro__cadastrar__form__button {
   width: 18rem;
 }
 .cadastro__cadastrar__sub {
   display: flex;
   margin-top: 0.5rem;
 }
-.cadastro__cadastrar__sub--text {
+.cadastro__cadastrar__sub__text {
   color: #505050;
   font-size: 12px;
 }
-.cadastro__cadastrar__sub--link {
+.cadastro__cadastrar__sub__-link {
   color: #174DBA;
   font-size: 12px;
   font-weight: bold;
@@ -123,7 +135,7 @@
 .usuarios__admUsuarios {
   width: 50rem;
 }
-.usuarios__admUsuarios--text {
+.usuarios__admUsuarios__text {
   font-size: 32px;
   display: inline-block;
 }
@@ -132,37 +144,37 @@
   grid-template: 1fr 1fr/1fr 1fr 1fr;
   grid-gap: 25px;
 }
-.usuarios__admUsuarios__card--form {
+.usuarios__admUsuarios__card__form {
   background-color: white;
   border-radius: 10px;
   height: 11rem;
 }
-.usuarios__admUsuarios__card--form--button {
+.usuarios__admUsuarios__card__form__button {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-.usuarios__admUsuarios__card--form--info {
+.usuarios__admUsuarios__card__form__info {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
-.usuarios__admUsuarios__card--form--info--img {
+.usuarios__admUsuarios__card__form__info__img {
   border-radius: 100%;
   background-color: #EFF0F3;
   box-sizing: border-box;
 }
-.usuarios__admUsuarios__card--form--info--img #imgAvatar {
+.usuarios__admUsuarios__card__form__info__img #imgAvatar {
   width: 60px;
   border-radius: 50%;
 }
-.usuarios__admUsuarios__card--form--info--text {
+.usuarios__admUsuarios__card__form__info__text {
   padding-top: 5px;
   padding-bottom: 5px;
   font-size: 20px;
 }
-.usuarios__admUsuarios__card--form--info--subText {
+.usuarios__admUsuarios__card__form__info__subText {
   color: #505050;
   font-size: 12px;
 }
@@ -173,7 +185,7 @@
   margin-top: 15px;
   width: 100%;
 }
-.usuarios__admUsuarios__indice--text {
+.usuarios__admUsuarios__indice__text {
   color: #505050;
   font-size: 12px;
 }

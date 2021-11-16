@@ -1,3 +1,8 @@
+function validateEmail(email) {
+  let expression = /\S+@\S+\.\S+/;
+  return expression.test(email);
+}
+
 function redirectLogin(event) {
   event.preventDefault();
 
@@ -6,6 +11,10 @@ function redirectLogin(event) {
   let senha = document.getElementById("senha");
   let senhaConfirm = document.getElementById("senhaConfirm");
 
+  if (!validateEmail(email)) {
+    alert ("E-mail Inválido!");
+    return;
+  }
   if (senha.value != senhaConfirm.value) {
     alert("As senhas não correspondem!");
     return;

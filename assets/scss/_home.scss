@@ -17,18 +17,32 @@
 
     &__form {
       width: variables.$homeWidth;
+
+      #eyePassword {
+        cursor: pointer;
+        width: 2rem;
+        fill: variables.$color-primary;
+        margin: 0.313rem 0.0rem 0.313rem 0.313rem;
+        border-radius: 0.313rem;
+        padding: 0.0rem 0.5rem 0.0rem 0.5rem;
+        background-color: variables.$color-primary;
+      }
+
+      &__key {
+        display: flex;
+      }
     }
 
     &__sub {
       display: flex;
       margin-top: 0.5rem;
 
-      &--text {
+      &__text {
         color: variables.$color-dark;
         font-size: 12px;
       }
 
-      &--link {
+      &__link {
         color: variables.$color-primary;
         font-size: 12px;
         font-weight: bold;

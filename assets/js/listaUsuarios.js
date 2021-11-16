@@ -14,17 +14,17 @@ axios.get('https://reqres.in/api/users')
 
     listaUsuarios.forEach(usuario => {
       divUsuarios.innerHTML += `
-        <div class="usuarios__admUsuarios__card--form">
-          <div  class="usuarios__admUsuarios__card--form--button">
+        <div class="usuarios__admUsuarios__card__form">
+          <div  class="usuarios__admUsuarios__card__form__button">
               <button type="submit" style="background-color:transparent; border-color:transparent; cursor:pointer;"> 
                   <img src="./assets/img/icon-edit.svg" height="23"/>
           </div>
-          <div class="usuarios__admUsuarios__card--form--info">
-              <div class="usuarios__admUsuarios__card--form--info--img">
+          <div class="usuarios__admUsuarios__card__form__info">
+              <div class="usuarios__admUsuarios__card__form__info__img">
                   <img id="imgAvatar" src="${usuario.avatar}"/>
               </div>
-              <h2 id="user1-nome" class="usuarios__admUsuarios__card--form--info--text">${usuario.first_name} ${usuario.last_name}</h2>
-              <h2 class="usuarios__admUsuarios__card--form--info--subText">${usuario.email}</h2>
+              <h2 id="user1-nome" class="usuarios__admUsuarios__card__form__info__text">${usuario.first_name} ${usuario.last_name}</h2>
+              <h2 class="usuarios__admUsuarios__card__form__info__subText">${usuario.email}</h2>
           </div>
         </div>
       `

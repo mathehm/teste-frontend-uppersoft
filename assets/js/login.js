@@ -1,3 +1,20 @@
+let containerSenha = document.getElementById("containerSenha");
+let inputSenha = document.getElementById("senha");
+let eyeSenha = document.getElementById("eyePassword");
+
+console.log(containerSenha);
+
+eyeSenha.addEventListener("click", function() {
+  containerSenha.classList.toggle("visible");
+  if (containerSenha.classList.contains("visible")) {
+    eyeSenha.src = "./assets/img/eye-off.svg";
+    inputSenha.type = "text";
+  } else {
+    eyeSenha.src = "./assets/img/eye.svg";
+    inputSenha.type = "password";
+  }
+})
+
 function redirectUser(event) {
   event.preventDefault();
 

@@ -38,7 +38,7 @@
     &__admUsuarios {
         width: 50rem;
 
-        &--text {
+        &__text {
             font-size: 32px;
             display: inline-block;
         }
@@ -48,25 +48,25 @@
             grid-template: 1fr 1fr / 1fr 1fr 1fr;
             grid-gap: 25px;
 
-            &--form {
+            &__form {
 
                 background-color: white;
                 border-radius: 10px;
                 height: 11rem;
 
-                &--button {
+                &__button {
                     display: flex;
                     justify-content: flex-end;
                     align-items: center;
                 }
 
-                &--info {
+                &__info {
                     display: flex;
                     justify-content: center;
                     align-items: center;
                     flex-direction: column;
 
-                    &--img {
+                    &__img {
                         border-radius: 100%;
                         background-color: variables.$color-gray;
                         box-sizing: border-box;
@@ -77,13 +77,13 @@
                         }
                     }
 
-                    &--text {
+                    &__text {
                         padding-top: 5px;
                         padding-bottom: 5px;
                         font-size: 20px;
                     }
 
-                    &--subText {
+                    &__subText {
                         color: variables.$color-dark;
                         font-size: 12px;
 
@@ -99,7 +99,7 @@
             margin-top: 15px;
             width: 100%;
 
-            &--text {
+            &__text {
                 color: variables.$color-dark;
                 font-size: 12px;
             }
