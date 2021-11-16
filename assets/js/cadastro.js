@@ -1,5 +1,5 @@
 function validateEmail(email) {
-  let expression = /\S+@\S+\.\S+/;
+  var expression = /\S+@\S+\.\S+/;
   return expression.test(email);
 }
 
@@ -11,7 +11,7 @@ function redirectLogin(event) {
   let senha = document.getElementById("senha");
   let senhaConfirm = document.getElementById("senhaConfirm");
 
-  if (!validateEmail(email)) {
+  if (!validateEmail(email.value)) {
     alert ("E-mail Inválido!");
     return;
   }
