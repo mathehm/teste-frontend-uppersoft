@@ -1,29 +1,24 @@
-# Teste Frontend UpperSoft
+# teste-upper
 
-## Run Locally
-
-Clone the project
-
-```bash
-  git clone https://github.com/mathehm/teste-frontend-uppersoft
+## Project setup
+```
+yarn install
 ```
 
-Go to the project directory
-
-```bash
-  cd teste-frontend-uppersoft
+### Compiles and hot-reloads for development
+```
+yarn serve
 ```
 
-Install dependencies
-
-```bash
-  yarn
+### Compiles and minifies for production
+```
+yarn build
 ```
 
-Run Sass
-
-```bash
-  sass --watch assets/scss/style.scss assets/css/style.css
+### Lints and fixes files
+```
+yarn lint
 ```
 
-Open `index.html` on your browser
+### Customize configuration
+See [Configuration Reference](https://cli.vuejs.org/config/).
