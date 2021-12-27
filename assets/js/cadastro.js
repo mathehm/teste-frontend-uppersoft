@@ -1,5 +1,5 @@
 function validateEmail(email) {
-  var expression = /\S+@\S+\.\S+/;
+  let expression = /\S+@\S+\.\S+/;
   return expression.test(email);
 }
 

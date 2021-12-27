@@ -1,13 +1,13 @@
 // Populando listagem de usuários
 axios.get('https://reqres.in/api/users')
   .then(function (response) {
-    var listaUsuarios = response.data.data;
-    var usuariosPorPagina = response.data.per_page;
-    var usuariosTotal = response.data.total;
+    let listaUsuarios = response.data.data;
+    let usuariosPorPagina = response.data.per_page;
+    let usuariosTotal = response.data.total;
 
-    var divUsuarios = document.getElementById("userCard");
-    var spanPerPage = document.getElementById("users_per_page");
-    var spanTotal = document.getElementById("users_total");
+    let divUsuarios = document.getElementById("userCard");
+    let spanPerPage = document.getElementById("users_per_page");
+    let spanTotal = document.getElementById("users_total");
 
     spanTotal.innerHTML = usuariosTotal;
     spanPerPage.innerHTML = usuariosPorPagina;

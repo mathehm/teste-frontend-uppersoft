@@ -2,8 +2,6 @@ let containerSenha = document.getElementById("containerSenha");
 let inputSenha = document.getElementById("senha");
 let eyeSenha = document.getElementById("eyePassword");
 
-console.log(containerSenha);
-
 eyeSenha.addEventListener("click", function() {
   containerSenha.classList.toggle("visible");
   if (containerSenha.classList.contains("visible")) {
