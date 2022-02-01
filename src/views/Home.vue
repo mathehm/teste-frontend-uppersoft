@@ -1,7 +1,5 @@
 <template>
   <div>
-    {{ count }}
-    <button @click="$store.commit('increment')">add</button>
     <header>
       <img src="../assets/img/logo-uppersoft.svg" />
     </header>
